@@ -1,0 +1,132 @@
+body {
+	background-color: #D0FA82; 
+	margin: 1%;
+}
+body header div{/*encabezado: titulo + menu*/
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+}
+.menu li{ /*lista del menu principal*/
+	display: inline-block;
+	position: relative;
+}
+.menu li a{ /*letras del menu principal*/
+	color: #E11F04;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	text-decoration: none;
+ 	list-style: none;
+}
+.submenu { /*estilo del sub-menu desplegable*/
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100px;
+}
+.menu>li:hover .submenu{ /*sub-menu desplegable*/
+	display: block;
+	width: 100%;
+}
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+body section {
+	margin: 5%;
+}
+.introduccion div{ /*VIDEO + TEXTO DE INTRODUCCION*/
+	display: inline-block;
+	background-image: url("../imagen/estrellas.jpg");
+	background-repeat: no-repeat;
+}
+.introduccion div video{ /*VIDEO*/
+	margin: 3%;
+}
+.introduccion div p { /*TEXTO DE INTRODUCCION*/
+	background-color: white;
+	
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	margin: 5%;
+	width: 400%;
+	animation: cambio 15s infinite alternate;
+}
+.slider li {
+	list-style: none;
+	width: 100%;
+}
+.slider img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+@keyframes cambio {
+	0% {margin-left: 0}
+	20% {margin-left: 0}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+body aside table { /*discografia, cuadro general*/
+ 	color: #D82020;
+ 	background-color: #E5EADD;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+	margin: 0px;
+	width: 100%;
+	align-content: center;
+	table-layout: fixed; /*para que sean todas as columnas iguales*/
+	display: inline-block;
+}
+body aside table img{ /*imagen de cada disco*/
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+ body aside table h2{ /*titulo de discografia*/
+ 	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	letter-spacing: 5px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	text-align: center;
+}
+.canciones { 
+	color: #C83232; 
+	font-family: 'Questrial', sans-serif;
+	font-size: 10px; 
+	letter-spacing: 1px;
+	display: none;
+}
+body footer div a{ /*formulario*/
+	text-decoration: none;
+	width: 100%;
+}
+body footer div nav ul li{
+	list-style: none;
+	background-color: #E5EADD;
+	width: 100%;
+}
+img.chica{
+  width: 150px; height: 150px;
+}
+img.mediana{
+  width: 400px; height: 350px;
+}
+img.grande{
+  width: 80%; height: 90%;
+}
