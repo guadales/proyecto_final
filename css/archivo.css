@@ -1,15 +1,14 @@
 body {
-	background-color: #D0FA82; 
+	background-color: #C1EE92; 
 	margin: 1%;
 }
-body header div{/*encabezado: titulo + menu*/
-	height: 100%;
-	width: 100%;
-	display: inline-block;
+body header{/*encabezado: titulo + menu*/
+	display: flex;
+	align-items: center;
 	position: relative;
 	color: #F91616;
  	font-family: 'Hammersmith One', sans-serif;
-}
+ }
 .menu li{ /*lista del menu principal*/
 	display: inline-block;
 	position: relative;
@@ -31,25 +30,23 @@ body header div{/*encabezado: titulo + menu*/
 	display: block;
 	width: 100%;
 }
+.introduccion{ /*CONTENEDOR FLEXBOX= VIDEO + TEXTO*/
+	padding: 5%;
+	display: flex;
+	justify-content: space-around;
+	background-image: url("../imagen/estrellas.png");
+}
+body section article div video{ /*VIDEO*/
+	width: 750px;
+	height: 400px;
+}
+.textointroduccion { /*TEXTO DE INTRODUCCION*/
+	background-color: white;
+}
 .slider{
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
-}
-body section {
-	margin: 5%;
-}
-.introduccion div{ /*VIDEO + TEXTO DE INTRODUCCION*/
-	display: inline-block;
-	background-image: url("../imagen/estrellas.jpg");
-	background-repeat: no-repeat;
-}
-.introduccion div video{ /*VIDEO*/
-	margin: 3%;
-}
-.introduccion div p { /*TEXTO DE INTRODUCCION*/
-	background-color: white;
-	
 }
 .slider ul {
 	display: flex;
