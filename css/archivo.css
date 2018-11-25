@@ -1,3 +1,133 @@
+/* Mobile Styles */
+@media only screen and (max-width: 400px ) {
+body {
+	background-color: #C1EE92; 
+	display: block;
+	width: 100%;
+}
+body header{/*encabezado: titulo + menu*/
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+ }
+ body header h1{/*encabezado: titulo*/
+	font-size: 2em;
+ }
+.menu li{ /*lista del menu principal*/
+	display: block;
+	position: relative;
+}
+.menu li a{ /*letras del menu principal*/
+	color: #E11F04;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	font-size: 1em;
+ 	text-decoration: none;
+ 	list-style: none;
+}
+.submenu { /*estilo del sub-menu desplegable*/
+	display: none;
+	position: absolute;
+	top: 3em;
+	width: 100px;
+}
+.menu>li:hover .submenu{ /*sub-menu desplegable*/
+	display: block;
+	width: 100%;
+}
+.introduccion{ /*CONTENEDOR FLEXBOX= VIDEO + TEXTO*/
+	padding: 5%;
+	display: block;
+	background-image: url("../imagen/estrellas.png");
+}
+body section article div video{ /*VIDEO*/
+	width: 100%;
+}
+.textointroduccion { /*TEXTO DE INTRODUCCION*/
+	background-color: #C1EE92;
+	text-align: center;
+}
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	margin: 5%;
+	width: 400%;
+	animation: cambio 15s infinite alternate;
+}
+.slider li {
+	list-style: none;
+	width: 100%;
+}
+.slider img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+@keyframes cambio {
+	0% {margin-left: 0}
+	20% {margin-left: 0}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+body aside { /*discografia, cuadro general ==> orden con flex*/
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	color: #D82020;
+ 	background-color: #E5EADD;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 0.05em;
+	font-size: 0.7em;
+	margin: 0px;
+	width: 100%;
+}
+.discos{
+	width: 100%;
+}
+.discos img{ /*imagen de cada disco*/
+	width: 100%;
+}
+body aside div h2{ /*titulo de discografia*/
+ 	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	letter-spacing: 1px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	text-align: center;
+}
+.canciones { 
+	color: #C83232; 
+	font-family: 'Questrial', sans-serif;
+	font-size: 1px; 
+	letter-spacing: 0.5px;
+	display: none;
+}
+body footer div a{ /*formulario*/
+	text-decoration: none;
+	width: 100%;
+}
+body footer div ul{
+	display: flex;
+	justify-content: center;
+}
+body footer div ul li{
+	list-style: none;
+	width: 20%;
+}
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px ) and
+(max-width: 960px ) {
 body {
 	background-color: #C1EE92; 
 	display: block;
@@ -10,8 +140,8 @@ body header{/*encabezado: titulo + menu*/
 	color: #F91616;
  	font-family: 'Hammersmith One', sans-serif;
  }
- body header h1{/*encabezado: titulo + menu*/
-	font-size: 40px;
+ body header h1{/*encabezado: titulo*/
+	font-size: 3em;
  }
 .menu li{ /*lista del menu principal*/
 	display: inline-block;
@@ -36,16 +166,16 @@ body header{/*encabezado: titulo + menu*/
 }
 .introduccion{ /*CONTENEDOR FLEXBOX= VIDEO + TEXTO*/
 	padding: 5%;
-	display: flex;
+	display: block;
 	justify-content: space-around;
 	background-image: url("../imagen/estrellas.png");
 }
 body section article div video{ /*VIDEO*/
-	width: 750px;
-	height: 400px;
+	width: 100%;
 }
 .textointroduccion { /*TEXTO DE INTRODUCCION*/
 	background-color: #C1EE92;
+	text-align: center;
 }
 .slider{
 	width: 95%;
@@ -84,7 +214,8 @@ body aside { /*discografia, cuadro general ==> orden con flex*/
  	color: #D82020;
  	background-color: #E5EADD;
 	font-family: 'Questrial', sans-serif;
-	letter-spacing: 2px;
+	letter-spacing: 0.1em;
+	font-size: 1em;
 	margin: 0px;
 	width: 100%;
 }
@@ -94,7 +225,135 @@ body aside { /*discografia, cuadro general ==> orden con flex*/
 .discos img{ /*imagen de cada disco*/
 	width: 100%;
 }
- body aside div h2{ /*titulo de discografia*/
+body aside div h2{ /*titulo de discografia*/
+ 	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	letter-spacing: 5px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	text-align: center;
+}
+.canciones { 
+	color: #C83232; 
+	font-family: 'Questrial', sans-serif;
+	font-size: 10px; 
+	letter-spacing: 1px;
+	display: none;
+}
+body footer div a{ /*formulario*/
+	text-decoration: none;
+	width: 100%;
+}
+body footer div ul{
+	display: flex;
+	justify-content: center;
+}
+body footer div ul li{
+	list-style: none;
+	width: 30%;
+}
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px ) {
+body {
+	background-color: #C1EE92; 
+	display: block;
+	width: 100%;
+}
+body header{/*encabezado: titulo + menu*/
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #F91616;
+ 	font-family: 'Hammersmith One', sans-serif;
+ }
+ body header h1{/*encabezado: titulo*/
+	font-size: 40px;
+ }
+.menu li{ /*lista del menu principal*/
+	display: inline-block;
+	position: relative;
+}
+.menu li a{ /*letras del menu principal*/
+	color: #E11F04;
+ 	font-family: 'Hammersmith One', sans-serif;
+ 	font-size: 25px;
+ 	text-decoration: none;
+ 	list-style: none;
+}
+.submenu { /*estilo del sub-menu desplegable*/
+	display: none;
+	position: absolute;
+	top: 25px;
+	width: 100px;
+}
+.menu>li:hover .submenu{ /*sub-menu desplegable*/
+	display: block;
+	width: 100%;
+}
+.introduccion{ /*CONTENEDOR FLEXBOX= VIDEO + TEXTO*/
+	padding: 5%;
+	display: flex;
+	justify-content: space-around;
+	background-image: url("../imagen/estrellas.png");
+}
+body section article div video{ /*VIDEO*/
+	width: 750px;
+	height: 400px;
+}
+.textointroduccion { /*TEXTO DE INTRODUCCION*/
+	background-color: #C1EE92;
+	text-align: center;
+}
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	margin: 5%;
+	width: 400%;
+	animation: cambio 15s infinite alternate;
+}
+.slider li {
+	list-style: none;
+	width: 100%;
+}
+.slider img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+@keyframes cambio {
+	0% {margin-left: 0}
+	20% {margin-left: 0}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+body aside { /*discografia, cuadro general ==> orden con flex*/
+ 	display: flex;
+ 	justify-content: space-around;
+ 	color: #D82020;
+ 	background-color: #E5EADD;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 0.2em;
+	font-size: 1.5em;
+	margin: 0px;
+	width: 100%;
+}
+.discos{
+	width: 33.3333%;
+}
+.discos img{ /*imagen de cada disco*/
+	width: 100%;
+}
+body aside div h2{ /*titulo de discografia*/
  	color: #F91616;
  	font-family: 'Hammersmith One', sans-serif;
  	letter-spacing: 5px;
@@ -121,3 +380,5 @@ body footer div ul li{
 	list-style: none;
 	width: 5%;
 }
+}
+
