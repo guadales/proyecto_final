@@ -4,132 +4,134 @@
 		<meta charset="utf-8">
 		<title>Monsieur Periné</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="css/archivo.css"/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--bootstrap-->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><!--bootstrap-->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><!--bootstrap-->
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!--bootstrap-->
+		<link rel="stylesheet" href="css/archivo.css"/> <!--hoja de estilos css-->
+		<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet"><!--fuente H1-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><!--fuente menu-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><!--fuente introduccion-->
+		<link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet"><!--fuente nombre discos-->
+		<link rel="stylesheet" href="css/main.css"/> <!--hoja de estilos que viene de sass-->
 	</head>
 	<body>
 		<header>
-			<h1>MONSIEUR<br>PERINÉ</h1>
-			<nav>
-				<ul class="menu">
-					<li><a href=”#”;">Home</a></li>
- 		    		<li><a href=”#”;">Nosotrxs</a></li>
- 		    		<li><a href=”#”;">Galeria</a></li>
- 		   			<li><a href=”#”;">Discos</a></li>
- 		    		<li><a href=”#”;">En que andamos</a>    		
- 						<ul class="submenu">
- 		    				<li><a href=”#” style="text-decoration: none;">Proximos Shows</a></li>
- 		    				<li><a href=”#” style="text-decoration: none;">Ultimas notas</a></li>
- 		    			</ul>
- 					</li>
- 		   			<li><a href=”#” style="text-decoration: none;">Tienda</a></li>
- 				</ul>
+			<h1>Monsieur Periné</h1>
+			<nav class="navbar navbar-expand-sm bg-light justify-content-center barranavegacion">
+				<ul class="navbar-nav">
+    				<li class="nav-item">
+      					<a class="nav-link" href="#">Home</a>
+    				</li>
+    				<li class="nav-item">
+     					<a class="nav-link" href="#">Nosotrxs</a>
+    				</li>
+    				<li class="nav-item">
+      					<a class="nav-link" href="#">Novedades</a>
+    				</li>
+    				<li class="nav-item">
+      					<a class="nav-link" href="#">Próximos Shows</a>
+    				</li>
+  				</ul>
 			</nav>
 		</header>
 		<section>
 			<article class="introduccion">
-				<div class="videointroduccion">
-					<video src="bailarcontigo.mp4" controls autoplay preload="on"><code>video</code></video>
+				<div id = "demo" class = "carousel slide" data-ride="carousel" data-interval= "3000">
+<!-- Indicators -->	<ul class = "carousel-indicators" >
+						<li data-target = "#demo" data-slide-to = "0" class = "active" ></li>
+						<li data-target = "#demo" data-slide-to = "1" ></li>
+						<li data-target = "#demo" data-slide-to = "2" ></li>
+					</ul>
+<!-- The slideshow -->	<div class="carousel-inner">
+							<div class ="carousel-item active text-center"> <!--text center es un predefinido para que centre la imagen-->
+								<img src="imagen/intro1.jpg" alt="intro1" class="img-fluid">
+							</div>
+							<div class = "carousel-item text-center">
+								<img src="imagen/intro2.jpg" alt="intro2" class="img-fluid">
+							</div>
+						<div class = "carousel-item text-center" >
+							<img src="imagen/intro3.jpg" alt="intro3" class="img-fluid">
+						</div>
+					</div>
+<!-- Left and right controls -->
+					<a class = "carousel-control-prev" href = "#demo" data-slide = "prev">
+						<span class = "carousel-control-prev-icon"></span>
+					</a>
+					<a class = "carousel-control-next" href = "#demo" data-slide = "next">
+						<span class = "carousel-control-next-icon"></span>
+					</a>
 				</div>
-				<div class="textointroduccion">
-					<p> ACA <br/> VA UN <br/> TEXTO SOBRE <br/> EL DISCO </p>
+				<div class="textointroduccion"><!--texto presentacion, igual article que slider-->
+					<p> Les invitamos a un recorrido sonoro mágico, psicodélico y sanador, que evoca una experiencia de viaje en el cual se sienten varios pisos térmicos; Un recorrido que se puede disfrutar de principio a fin, sin interrupciones, moviéndose por diferentes regiones y ritmos. <br> Para los integrantes de Monsieur Periné, tener "Encanto tropical" es tener ímpetu y sabor para levantarse ante cualquier adversidad; es sonreírle a la vida y al que camina al lado; es sentirse orgullosx de las raíces y de la historia, para contarle al mundo lo que se es...</p>
 				</div>
 			</article>
-			<article>
-				<div class="slider">
-					<ul>
-						<li><img src="imagen/intro1.jpg" alt="introduccion1"/></li>
-						<li><img src="imagen/intro2.jpg" alt="introduccion2"/></li>
-						<li><img src="imagen/intro3.jpg" alt="introduccion3"/></li>
-						<li><img src="imagen/intro4.jpg" alt="introduccion4"/></li>
-					</ul> 
-				</div> 
+			<article class="videointroduccion"> <!--video automatico encanto tropical-->
+				<video src="bailarcontigo.mp4" controls autoplay preload="on"><code>video</code></video>
+			</article>
+			<article class="contenedorbiografias"> <!--contenedor general de las 3 biografías-->
+				<div class="biografias">
+					<img src="imagen/catalina.jpg">
+					<p>Vocalista del grupo. Catalina García nació en Cali, Colombia, un 22 de febrero de 1986. Luego de vivir 2 años en Estados Unidos, con su familia, se trasladó a la ciudad de Bogotá, donde inició su estudios en Antropología y donde nació la banda.</p>
+				</div>
+				<div class="biografias">
+					<img src="imagen/santiago.jpg">
+					<p>Santiago Prieto Sarabia es politólogo y músico con énfasis en Producción Musical de la Universidad de los Andes. Inquieto y muy experimental, ha concentrado su labor en crear composiciones que no temen al cambio abrupto de un género a otro y a la explotación de las cuerdas a más no poder.</p>
+				</div>
+				<div class="biografias">
+					<img src="imagen/nicolas.jpg">
+					<p>Nicolás Junca, Guitarra – cuerdas, comenzó a los diez años clases de guitarra; durante ese período le comienza a gustar la música. Paró un tiempo, para volver a la academia Piccoli, donde conoce a Santiago Prieto y, a partir de ahí, comenzaron a trabajar juntos</p>
+				</div>
 			</article>
 		</section>
-		<aside>
+		<aside class="contenedordiscos">
 			<div class="discos"><!--ENCANTO TROPICAL-->
 				<a href="https://open.spotify.com/album/65dDJHiGH66LQPEiLHKDma">
-					<img src="imagen/encanto-tropical.jpg" alt="Encanto Tropical"/>	
+					<img src="imagen/encanto-tropical.jpg" alt="Encanto Tropical" class="img-rounded"/>	
 				</a>
 				<h2>Encanto Tropical</h2>
-				<p>Nuestro ultimo disco, tambien producido por Eduardo Cabra. Les traemos lo que surgio  explorando las raíces culturales de los diversos sonidos de Latinoamérica. Tener Encanto Tropical es tener ímpetu y sabor para levantarse ante cualquier adversidad!</p>	
-				<ol class="canciones">
-					<li> Encanto Tropical </li>
-					<li> Veneno </li>
-					<li> Bailar contigo </li>
-					<li> Tarde </li>
-					<li> La sombra </li>
-					<li> Infinito </li>
-					<li> Guayabas y flores </li>
-					<li> La tregua </li>
-					<li> La hora sublime del bolero </li>
-					<li> Me vas a hacer falta </li>
-					<li> Llevame </li>
-					<li> Vamonos </li>
-				</ol>
 			</div>
 			<div class="discos"><!--CAJA DE MUSICA-->
 				<a href="https://open.spotify.com/album/0c3JGBp60aExJSYIQ0Hbej">
 					<img src="imagen/caja-de-musica.jpg" alt="caja de musica edicion especial"/>	
 				</a>					
 				<h2>Caja de Musica</h2>
-				<p>Lanzado en 2015 bajo la producción de Eduardo Cabra. Con este álbum ganamos un Latin Grammy 2015 en la categoría “Mejor Artista Nuevo” y estuvimos nominados como “Álbum del año”. Más tarde, fue también nominado a “Mejor álbum rock latino / alternativo” en los Grammy®.</p>
-				<ol class="canciones">
-					<li> Nuestra canción </li>
-					<li> No hace falta </li>
-					<li> Tu M'as promis </li>
-					<li> Interludio: Carrillons A Musique  </li>
-					<li> Turquesa menina </li>
-					<li> Dejame vivir </li>
-					<li> Año bisiesto </li>
-					<li> Interludio: paseo </li>
-					<li> Cempasùchil </li>
-					<li> Viejos amores </li>
-					<li> Incendio </li>
-					<li> Marinero Wawani </li>
-					<li> Llorè </li>
-					<li> Mi libertad </li>
-					<li> Outro: caja de musica </li>
-				</ol>
 			</div>
 			<div class="discos"><!--HECHO A MANO-->
 				<a href="https://open.spotify.com/album/0HLPr4c2d1vlhIA3yOZqtS">
 					<img src="imagen/hecho-a-mano.jpg" alt="hecho a mano"/>	
 				</a>
 				<h2>Hecho a Mano</h2>
-				<p>Es nuestro primer material discográfico, fue lanzado en el año 2012. Gracias a este disco conseguimos nuestro primer Disco de Oro.</p>
-				<ol class="canciones">
-					<li> La tienda de sombreros </li>
-					<li> La ciudad </li>
-					<li> Suin romanticon </li>
-					<li> Sabor a mi </li>
-					<li> Cou Cou </li>
-					<li> Huracan </li>
-					<li> La Playa </li>
-					<li> Ton Silence </li>
-					<li> Be Pop </li>
-					<li> Nada Puro Hay </li>
-					<li> La muerte </li>
-					<li> Swing With Me </li>
-				</ol>
 			</div>
 		</aside>
 		<footer>
 			<div>
-				<ul>
-					<li><i class="fab fa-instagram fa-3x"></i></li>
-					<li><i class="fab fa-facebook-f fa-3x"></i></li>
-					<li><i class="fab fa-youtube fa-3x"></i></li>
-					<li><i class="fab fa-spotify fa-3x"></i></li>		
+				<ul class="redes">
+					<li class="icono-redes">
+						<a href="https://www.instagram.com/monsieurperine/">
+							<img src="imagen/instagram.png" alt="instagram"/>	
+						</a>
+					</li>
+					<li class="icono-redes">
+						<a href="https://es-la.facebook.com/monsieurperinemusic/">
+							<img src="imagen/facebook.png" alt="facebook"/>	
+						</a>						
+					</li>
+					<li class="icono-redes">
+						<a href="https://open.spotify.com/artist/36KsCCwgI0Dep97yVJWmkK">
+							<img src="imagen/spotify.png" alt="spotify"/>	
+						</a>
+					</li>
 				</ul> 
 			</div>
-			<div>
-				<a href="formulario.html";">Contrataciones, comentarios y oportunidades</a>
+			<div class="contacto">
+				<button type="button" class="btn btn-success"><a href="formulario.html";" class="nounderline">Click aqui para contactarnos</a></button>
 			</div>
 			<div>
-				<p>© todos los derechos reservados</p>
+				<p>© todos los derechos reservados <br> Icon from www.flaticon.com</p>
 			</div>
 		</footer>
 	</body>
