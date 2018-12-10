@@ -1,0 +1,27 @@
+
+$color-verde: #CEF29A;
+$color-letras-menu: #22C601;
+$color-amarillo: #FFE48A;
+$color-morado-oscuro: #A90344;
+$color-morado-claro: #D38FAA;
+$color-marron: #DDBF5C;
+$color-gris: #D2D2D2;
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}

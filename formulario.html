@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<title>Monsieur Periné</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><!--bootstrap-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><!--bootstrap-->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!--bootstrap-->
+		<link rel="stylesheet" href="css/archivo.css"/> <!--hoja de estilos css-->
+		<link rel="stylesheet" href="css/main.css"/> <!--hoja de estilos que viene de sass-->	
+	</head>
+	<body>
 		<form>
-		<fieldset>
-			<legend> Formulario de contacto</legend>
-			<section>
-		    	<article>
-		    		<p>
-						<label for="Nombre"> Nombre: </label>
-					</p>
+			<fieldset>
+				<legend> Formulario de contacto</legend>
+				<section>
+		    		<article>
+		    			<p>
+							<label for="Nombre"> Nombre: </label>
+						</p>
 						<input type="text" name="Nombre" placeholder="Nombre" />
-		    	</article>
-				<article>	
-					<p>
-						<label for="Apellido"> Apellido: </label>
-					</p>
-					<input type="text" name="Apellido" placeholder="Apellido" />
-				</article>	
-				<article>
-					<p>
-						<label for="e mail"> e-mail: </label>
-					</p>
-					<input type="e-mail" name="email" placeholder="e-mail" />
-				</article>
-			</section>
+		    		</article>
+					<article>	
+						<p>
+							<label for="Apellido"> Apellido: </label>
+						</p>
+						<input type="text" name="Apellido" placeholder="Apellido" />
+					</article>	
+					<article>
+						<p>
+							<label for="e mail"> e-mail: </label>
+						</p>
+						<input type="e-mail" name="email" placeholder="e-mail" />
+					</article>
+				</section>
 			<br>
-			<section>
-				<label>Nos queres contactar para:</label>
-				<select name="contactarnos">
-					<option value="Contratarnos"> Contratarnos </option>
-					<option value="enviar tu cv"> Enviar tu CV </option>
-					<option value="sugerencias"> Sugerencias </option>
-				</select>
-			</section>
-			<br>
-			<section>
-			<textarea></textarea>
-			</section>
-			<br>
-			<section>
-				<div>Acepta tèrminos y condiciones</div>
-				<input type="checkbox" name="Acepta" value="1" />
-			</section>
-			<input type="reset" name="reset">
-			<input type="submit" name="Enviar">
-		</fieldset>
+				<section>
+					<label>Nos queres contactar para:</label>
+					<select name="contactarnos">
+						<option value="Contratarnos"> Contratarnos </option>
+						<option value="enviar tu cv"> Enviar tu CV </option>
+						<option value="sugerencias"> Sugerencias </option>
+					</select>
+				</section>
+                <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                    <div class="col-md-8">
+                        <textarea class="form-control" id="message" name="message" placeholder="Escribe aqui tu mensaje" rows="7"></textarea>
+                    </div>
+                </div>
+				<section>
+					<div>Acepta términos y condiciones</div>
+					<input type="checkbox" name="Acepta" value="1" />
+				</section>
+				<input type="reset" name="reset">
+				<input type="submit" name="Enviar">
+			</fieldset>
 		</form>
-</body>
+	</body>
 </html>
+
+
+
+

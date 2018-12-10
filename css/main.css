@@ -1,2 +1,141 @@
 body {
-  color: black; }
+  background-color: #CEF29A;
+  width: 100%;
+  display: block;
+  /*cierra el contenedor general "contenedordiscos" que es un aside, dentro del body*/ }
+  body .contenedordiscos {
+    background-color: #FFE48A;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    width: 100%;
+    /*cierra la clase discos*/ }
+    body .contenedordiscos .discos {
+      width: 25%;
+      margin: 2%;
+      text-align: center;
+      /*cierra el titulo h2*/ }
+      body .contenedordiscos .discos img {
+        width: 80%;
+        border-radius: 2%; }
+      body .contenedordiscos .discos h2 {
+        font-family: 'Open Sans', sans-serif;
+        color: #A90344;
+        margin-top: 3%; }
+
+/*cierra body*/
+header h1 {
+  font-family: 'Paytone One', sans-serif;
+  color: #A90344;
+  font-size: 40px; }
+
+header .barranavegacion {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #A90344;
+  font-style: normal; }
+
+footer {
+  /*cierra clase general redes*/ }
+  footer .redes {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 2%; }
+    footer .redes .icono-redes {
+      padding: 2%;
+      justify-content: flex-end; }
+      footer .redes .icono-redes a img {
+        width: 50px;
+        height: 50px; }
+  footer .contacto {
+    padding: 2%;
+    font-family: 'Paytone One', sans-serif; }
+    footer .contacto button {
+      background-color: #D2D2D2; }
+      footer .contacto button a {
+        text-decoration: none;
+        color: black; }
+  footer div p {
+    background-color: #DDBF5C;
+    display: block;
+    font-size: 0.7em; }
+
+/*cierra clase footer*/
+section {
+  /*CIERRO LA CLASE INTRODUCCION, article con slide+texto*/
+  /*cierro video, dentro de una section. Es 1 de 3 articulos*/
+  /*cierra contenedor general de las 3 biografias, que es un article*/ }
+  section .introduccion {
+    /*CONTENEDOR (article) con slide+texto*/
+    display: flex;
+    margin: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+    /*cierra slide*/
+    /*cierra texto intro*/ }
+    @media (max-width: 767px) {
+      section .introduccion {
+        display: block; } }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      section .introduccion {
+        display: block; } }
+    section .introduccion .slide {
+      width: 60%;
+      margin-right: 3%; }
+    section .introduccion .textointroduccion {
+      width: 30%;
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      font-size: 18.5px;
+      letter-spacing: 2px; }
+      @media (max-width: 767px) {
+        section .introduccion .textointroduccion {
+          font-size: 10px; } }
+      @media (min-width: 767px) and (max-width: 1023px) {
+        section .introduccion .textointroduccion {
+          font-size: 15px; } }
+  section .videointroduccion {
+    /*article que tiene el video de encanto tropical*/
+    background-image: url("../imagen/fondo.jpg");
+    margin: 3%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 90%; }
+    @media (max-width: 767px) {
+      section .videointroduccion {
+        width: 80%;
+        padding: 0; } }
+  section .contenedorbiografias {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    /*cierra clase "biografia" individual*/ }
+    @media (max-width: 767px) {
+      section .contenedorbiografias {
+        display: block;
+        justify-content: center;
+        margin: 0; } }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      section .contenedorbiografias {
+        display: block;
+        justify-content: center;
+        margin: 0; } }
+    section .contenedorbiografias .biografias {
+      width: 25%;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      /*cierra imagen de biografias*/ }
+      section .contenedorbiografias .biografias img {
+        margin: 5%;
+        width: 50%;
+        border-radius: 50%;
+        text-align: center; }
+
+/*CIERRA SECTION*/

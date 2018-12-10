@@ -1,0 +1,25 @@
+@import "variables";
+body {
+	background-color: $color-verde;
+	width: 100%;
+	display: block;
+	.contenedordiscos{
+		background-color: $color-amarillo;
+ 		display: flex;
+ 		justify-content: space-around;
+		margin: 0px;
+		width: 100%;
+		.discos{
+			width: 25%;
+			margin: 2%;
+			text-align: center;
+			img {
+				width: 80%;
+				border-radius: 2%;}
+			h2{
+				font-family: 'Open Sans', sans-serif;
+				color: $color-morado-oscuro;
+				margin-top: 3%;} /*cierra el titulo h2*/
+		}/*cierra la clase discos*/	
+	}/*cierra el contenedor general "contenedordiscos" que es un aside, dentro del body*/	
+}/*cierra body*/

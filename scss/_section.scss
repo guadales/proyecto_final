@@ -1,0 +1,74 @@
+@import "variables";
+section {
+	.introduccion{ /*CONTENEDOR (article) con slide+texto*/
+		display: flex;
+		margin: 2%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		align-items: center;
+		@include media(xs) {
+    		display: block;
+  		}
+		@include media(sm) {
+    		display: block;
+  		}
+		.slide{
+			width: 60%;
+			margin-right: 3%; 
+		}/*cierra slide*/
+		.textointroduccion{
+			width: 30%;
+			font-family: 'Open Sans', sans-serif;
+			color: black;
+			font-size: 18.5px;
+			letter-spacing: 2px;
+			@include media(xs) {
+    			font-size: 10px;
+  			}
+			@include media(sm) {
+    			font-size: 15px;
+  			}
+		}/*cierra texto intro*/
+	}/*CIERRO LA CLASE INTRODUCCION, article con slide+texto*/
+	.videointroduccion{ /*article que tiene el video de encanto tropical*/
+		background-image: url("../imagen/fondo.jpg");
+		margin: 3%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		padding-top: 7%;
+		padding-bottom: 7%;
+		width: 90%;
+  		@include media(xs) {
+    		width: 80%;
+    		padding: 0;
+  		}
+	}/*cierro video, dentro de una section. Es 1 de 3 articulos*/
+	.contenedorbiografias{
+		display: flex;
+		justify-content: space-around;
+		margin: 10%;
+		@include media(xs) {
+    		display: block;
+    		justify-content: center;
+    		margin: 0;
+  		}
+		@include media(sm) {
+    		display: block;
+    		justify-content: center;
+    		margin: 0;
+  		}
+		.biografias{
+			width: 25%;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			letter-spacing: 1px;
+			img{
+				margin: 5%;
+				width: 50%;
+				border-radius: 50%;
+				text-align: center;}/*cierra imagen de biografias*/
+		}/*cierra clase "biografia" individual*/
+	}/*cierra contenedor general de las 3 biografias, que es un article*/
+}/*CIERRA SECTION*/

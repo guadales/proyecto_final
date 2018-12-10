@@ -1,0 +1,14 @@
+@import "variables";
+header{ 
+	h1{
+		font-family: 'Paytone One', sans-serif;
+		color: $color-morado-oscuro;
+		font-size: 40px;
+	}
+	.barranavegacion {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		color: $color-morado-oscuro;
+		font-style: normal;
+	}
+}

@@ -1,0 +1,31 @@
+@import "variables";
+
+footer {
+	.redes {
+ 		display: flex;
+		justify-content: flex-end;
+		list-style: none;
+		margin: 2%; 
+		.icono-redes {
+			padding: 2%;
+			justify-content: flex-end;
+			a img {
+				width:50px;
+				height: 50px;}
+		}
+	}/*cierra clase general redes*/
+	.contacto{
+		padding: 2%;
+		font-family: 'Paytone One', sans-serif;
+		button{
+			background-color: $color-gris;
+			a {
+			text-decoration: none;
+			color: black;}
+		}
+	}
+	div p{
+		background-color: $color-marron;
+		display: block;
+		font-size: 0.7em;}
+}/*cierra clase footer*/
