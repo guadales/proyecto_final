@@ -14,7 +14,15 @@ section {
   		}
 		.slide{
 			width: 60%;
-			margin-right: 3%; 
+			margin: 3%;
+			@include media(xs) {
+    			width: 90%;
+    			margin-right: 0;
+  			}
+			@include media(sm) {
+    			width: 90%;
+    			margin-right: 0;
+  			}
 		}/*cierra slide*/
 		.textointroduccion{
 			width: 30%;
@@ -24,51 +32,83 @@ section {
 			letter-spacing: 2px;
 			@include media(xs) {
     			font-size: 10px;
+				width: 80%;
   			}
 			@include media(sm) {
     			font-size: 15px;
+				width: 80%;
   			}
 		}/*cierra texto intro*/
 	}/*CIERRO LA CLASE INTRODUCCION, article con slide+texto*/
 	.videointroduccion{ /*article que tiene el video de encanto tropical*/
-		background-image: url("../imagen/fondo.jpg");
-		margin: 3%;
+		/*background-image: url("../imagen/fondo.jpg");
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center;*/
 		text-align: center;
 		padding-top: 7%;
 		padding-bottom: 7%;
-		width: 90%;
+		margin-top: 5%;
+		margin-bottom: 5%;
   		@include media(xs) {
-    		width: 80%;
     		padding: 0;
+  		}
+  		@include media(sm) {
+    		padding: 0;
+  		}
+  		video {
+  			width: 80%;
+  			@include media(sm) {
+    		width: 90%;
+  			}
   		}
 	}/*cierro video, dentro de una section. Es 1 de 3 articulos*/
 	.contenedorbiografias{
 		display: flex;
 		justify-content: space-around;
-		margin: 10%;
-		@include media(xs) {
-    		display: block;
-    		justify-content: center;
-    		margin: 0;
-  		}
+		margin-top: 5%;
+		margin-bottom: 5%;
 		@include media(sm) {
     		display: block;
-    		justify-content: center;
+    		text-align: center;
     		margin: 0;
+    		justify-content: center;
+  		}
+		@include media(xs) {
+    		display: block;
+    		text-align: center;
+    		margin: 0;
+    		justify-content: center;
   		}
 		.biografias{
 			width: 25%;
 			text-align: center;
 			font-family: 'Open Sans', sans-serif;
 			font-size: 20px;
-			letter-spacing: 1px;
+			letter-spacing: 1.2px;
+			padding-top: 2%;
+			padding-bottom: 3%;
+			@include media(xs) {
+				font-size: 10px;
+				letter-spacing: 0.5px;
+				width: 80%;
+  			}
+			@include media(sm) {
+				font-size: 15px;
+				letter-spacing: 0.75px;
+				width: 80%;
+  			}
 			img{
 				margin: 5%;
-				width: 50%;
+				width: 60%;
 				border-radius: 50%;
-				text-align: center;}/*cierra imagen de biografias*/
+				text-align: center;
+				@include media(sm) {
+					width: 30%;
+  				}
+				@include media(xs) {
+					width: 30%;
+  				}
+			}/*cierra imagen de biografias*/
 		}/*cierra clase "biografia" individual*/
 	}/*cierra contenedor general de las 3 biografias, que es un article*/
 }/*CIERRA SECTION*/

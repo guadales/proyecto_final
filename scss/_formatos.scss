@@ -9,17 +9,49 @@ body {
  		justify-content: space-around;
 		margin: 0px;
 		width: 100%;
+		@include media(xs) {
+    		display: block;
+  		}
+		@include media(sm) {
+    		display: block;
+  		}
 		.discos{
 			width: 25%;
 			margin: 2%;
 			text-align: center;
 			img {
 				width: 80%;
-				border-radius: 2%;}
+				border-radius: 2%;
+				@include media(sm) {
+    				width: 50%;
+  				}
+				@include media(xs) {
+    				width: 50%;
+  				}
+			}
 			h2{
 				font-family: 'Open Sans', sans-serif;
 				color: $color-morado-oscuro;
-				margin-top: 3%;} /*cierra el titulo h2*/
+				margin-top: 3%;
+				font-size: 35px;
+				@include media(sm) {
+    				font-size: 25px;
+  				}
+				@include media(xs) {
+    				font-size: 15px;
+  				}
+			} /*cierra el titulo h2*/
+			@include media(xs) {
+    			width: 100%;
+  			}
+			@include media(sm) {
+    			width: 100%;
+  			}
 		}/*cierra la clase discos*/	
 	}/*cierra el contenedor general "contenedordiscos" que es un aside, dentro del body*/	
 }/*cierra body*/
+
+.formulario{
+	padding-left: 10%;
+
+}

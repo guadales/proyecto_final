@@ -10,6 +10,12 @@ body {
     margin: 0px;
     width: 100%;
     /*cierra la clase discos*/ }
+    @media (max-width: 767px) {
+      body .contenedordiscos {
+        display: block; } }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      body .contenedordiscos {
+        display: block; } }
     body .contenedordiscos .discos {
       width: 25%;
       margin: 2%;
@@ -18,50 +24,60 @@ body {
       body .contenedordiscos .discos img {
         width: 80%;
         border-radius: 2%; }
+        @media (min-width: 767px) and (max-width: 1023px) {
+          body .contenedordiscos .discos img {
+            width: 50%; } }
+        @media (max-width: 767px) {
+          body .contenedordiscos .discos img {
+            width: 50%; } }
       body .contenedordiscos .discos h2 {
         font-family: 'Open Sans', sans-serif;
         color: #A90344;
-        margin-top: 3%; }
+        margin-top: 3%;
+        font-size: 35px; }
+        @media (min-width: 767px) and (max-width: 1023px) {
+          body .contenedordiscos .discos h2 {
+            font-size: 25px; } }
+        @media (max-width: 767px) {
+          body .contenedordiscos .discos h2 {
+            font-size: 15px; } }
+      @media (max-width: 767px) {
+        body .contenedordiscos .discos {
+          width: 100%; } }
+      @media (min-width: 767px) and (max-width: 1023px) {
+        body .contenedordiscos .discos {
+          width: 100%; } }
 
 /*cierra body*/
+.formulario {
+  padding-left: 10%; }
+
 header h1 {
   font-family: 'Paytone One', sans-serif;
   color: #A90344;
-  font-size: 40px; }
+  font-size: 40px;
+  text-align: center; }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    header h1 {
+      font-size: 30px; } }
+  @media (max-width: 767px) {
+    header h1 {
+      font-size: 15px; } }
 
-header .barranavegacion {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  color: #A90344;
-  font-style: normal; }
+header .menu {
+  justify-content: center; }
+  header .menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #A90344;
+    font-style: normal; }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      header .menu ul li a {
+        font-size: 15px; } }
+    @media (max-width: 767px) {
+      header .menu ul li a {
+        font-size: 10px; } }
 
-footer {
-  /*cierra clase general redes*/ }
-  footer .redes {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 2%; }
-    footer .redes .icono-redes {
-      padding: 2%;
-      justify-content: flex-end; }
-      footer .redes .icono-redes a img {
-        width: 50px;
-        height: 50px; }
-  footer .contacto {
-    padding: 2%;
-    font-family: 'Paytone One', sans-serif; }
-    footer .contacto button {
-      background-color: #D2D2D2; }
-      footer .contacto button a {
-        text-decoration: none;
-        color: black; }
-  footer div p {
-    background-color: #DDBF5C;
-    display: block;
-    font-size: 0.7em; }
-
-/*cierra clase footer*/
 section {
   /*CIERRO LA CLASE INTRODUCCION, article con slide+texto*/
   /*cierro video, dentro de una section. Es 1 de 3 articulos*/
@@ -83,7 +99,15 @@ section {
         display: block; } }
     section .introduccion .slide {
       width: 60%;
-      margin-right: 3%; }
+      margin: 3%; }
+      @media (max-width: 767px) {
+        section .introduccion .slide {
+          width: 90%;
+          margin-right: 0; } }
+      @media (min-width: 767px) and (max-width: 1023px) {
+        section .introduccion .slide {
+          width: 90%;
+          margin-right: 0; } }
     section .introduccion .textointroduccion {
       width: 30%;
       font-family: 'Open Sans', sans-serif;
@@ -92,50 +116,115 @@ section {
       letter-spacing: 2px; }
       @media (max-width: 767px) {
         section .introduccion .textointroduccion {
-          font-size: 10px; } }
+          font-size: 10px;
+          width: 80%; } }
       @media (min-width: 767px) and (max-width: 1023px) {
         section .introduccion .textointroduccion {
-          font-size: 15px; } }
+          font-size: 15px;
+          width: 80%; } }
   section .videointroduccion {
     /*article que tiene el video de encanto tropical*/
-    background-image: url("../imagen/fondo.jpg");
-    margin: 3%;
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-image: url("../imagen/fondo.jpg");
+		background-repeat: no-repeat;
+		background-position: center;*/
     text-align: center;
     padding-top: 7%;
     padding-bottom: 7%;
-    width: 90%; }
+    margin-top: 5%;
+    margin-bottom: 5%; }
     @media (max-width: 767px) {
       section .videointroduccion {
-        width: 80%;
         padding: 0; } }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      section .videointroduccion {
+        padding: 0; } }
+    section .videointroduccion video {
+      width: 80%; }
+      @media (min-width: 767px) and (max-width: 1023px) {
+        section .videointroduccion video {
+          width: 90%; } }
   section .contenedorbiografias {
     display: flex;
     justify-content: space-around;
-    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     /*cierra clase "biografia" individual*/ }
-    @media (max-width: 767px) {
-      section .contenedorbiografias {
-        display: block;
-        justify-content: center;
-        margin: 0; } }
     @media (min-width: 767px) and (max-width: 1023px) {
       section .contenedorbiografias {
         display: block;
-        justify-content: center;
-        margin: 0; } }
+        text-align: center;
+        margin: 0;
+        justify-content: center; } }
+    @media (max-width: 767px) {
+      section .contenedorbiografias {
+        display: block;
+        text-align: center;
+        margin: 0;
+        justify-content: center; } }
     section .contenedorbiografias .biografias {
       width: 25%;
       text-align: center;
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
+      padding-top: 2%;
+      padding-bottom: 3%;
       /*cierra imagen de biografias*/ }
+      @media (max-width: 767px) {
+        section .contenedorbiografias .biografias {
+          font-size: 10px;
+          letter-spacing: 0.5px;
+          width: 80%; } }
+      @media (min-width: 767px) and (max-width: 1023px) {
+        section .contenedorbiografias .biografias {
+          font-size: 15px;
+          letter-spacing: 0.75px;
+          width: 80%; } }
       section .contenedorbiografias .biografias img {
         margin: 5%;
-        width: 50%;
+        width: 60%;
         border-radius: 50%;
         text-align: center; }
+        @media (min-width: 767px) and (max-width: 1023px) {
+          section .contenedorbiografias .biografias img {
+            width: 30%; } }
+        @media (max-width: 767px) {
+          section .contenedorbiografias .biografias img {
+            width: 30%; } }
 
 /*CIERRA SECTION*/
+footer {
+  margin-top: 3%;
+  /*cierra clase general redes*/ }
+  footer .redes {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; }
+    footer .redes .icono-redes {
+      padding: 2%;
+      justify-content: flex-end; }
+      footer .redes .icono-redes a img {
+        width: 50px;
+        height: 50px; }
+        @media (min-width: 767px) and (max-width: 1023px) {
+          footer .redes .icono-redes a img {
+            width: 40px;
+            height: 40px; } }
+        @media (max-width: 767px) {
+          footer .redes .icono-redes a img {
+            width: 30px;
+            height: 30px; } }
+  footer .contacto {
+    padding: 2%;
+    font-family: 'Paytone One', sans-serif; }
+    footer .contacto button {
+      background-color: #D2D2D2; }
+      footer .contacto button a {
+        text-decoration: none;
+        color: black; }
+  footer div p {
+    background-color: #DDBF5C;
+    display: block;
+    font-size: 0.7em; }
+
+/*cierra clase footer*/

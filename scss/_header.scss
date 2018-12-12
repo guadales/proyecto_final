@@ -4,11 +4,34 @@ header{
 		font-family: 'Paytone One', sans-serif;
 		color: $color-morado-oscuro;
 		font-size: 40px;
+		text-align: center;
+		@include media(sm) {
+    		font-size: 30px;
+  		}
+		@include media(xs) {
+    		font-size: 15px;
+  		}
 	}
-	.barranavegacion {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 20px;
-		color: $color-morado-oscuro;
-		font-style: normal;
+	.menu {
+		justify-content: center;
+		@include media(xs) {
+  		}
+		ul{
+			li{
+				a{
+					font-family: 'Open Sans', sans-serif;
+					font-size: 20px;
+					color: $color-morado-oscuro;
+					font-style: normal;
+
+					@include media(sm) {
+    					font-size: 15px;
+  					}
+					@include media(xs) {
+    					font-size: 10px;
+  					}
+				}
+			}
+		}
 	}
 }
